@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*fonts
+font-family: "Poppins", system-ui;
+font-family: "Inter", system-ui;
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo suave */
+}
+header{
+    background: #000058;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    font-family: "Poppins", system-ui;
+}
+.logo{
+    color: white;
+    display: flex;
+    font-size: 1.9rem;
+    font-family: "Poppins", system-ui;
+}
+.logo img{
+    margin-top: 3px;
+    margin-right: 5px;
+    height: 35px;
+}
+/*links*/
+.links ul li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    position: relative;
+}
+.links a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #f4c070;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+.links a:hover::after{
+    width: 100%;
+}
+.btn-abrir-menu{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10rem;
+}
+.card{
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-height: 40%;
+    max-width: 80%;
+    margin: 40px 5%;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 10rem;
+}
+.card img {
+    width: 250px; /* Tamanho da imagem do cartão */
+    height: auto;
+    border-radius: 10px 0 0 10px;
+  }
+.box-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descricao {
+    color: grey;
+    font-size: 22px;
+  }
+.card > div {
+    padding: 20px;
+    flex-grow: 1; /* Faz a descrição ocupar o espaço restante */
+}
+.card h1 {
+    font-size: 3.5rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+.card p {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    line-height: 1.5; /* Melhor legibilidade do texto */
+}
+.planos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Espaçamento acima dos planos */
+}
+
+.plano-mensal,
+.plano-anual {
+    background-color: #f0f0f0; /* Fundo leve para os planos */
+    border-radius: 8px;
+    padding: 15px;
+    width: 48%; /* Largura de cada plano */
+    text-align: center; /* Centraliza o texto */
+}
+.plano-mensal p,
+.plano-anual p{
+    font-size: 1.5rem;
+}
+/* Listas na descrição */
+.descricao ul {
+    list-style-type: none; /* Remove marcadores padrão */
+    padding-left: 0; /* Remove indentação */
+}
+  .planos button {
+    border: gray;
+    outline: 0;
+    border-radius: 10px;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .botao_assinar {
+    border: gray;
+    outline: 0;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  .botao_assinar:hover {
+    background-color: #f4c070; /* Cor do botão ao passar o mouse */
+    opacity: 0.7;
+}
+    /*footer*/
+footer{
+    background-color: #000058;
+    height: 500px;
+    width: 100%;
+    margin-top: 250px;
+    border-top: 1px solid #fff;
+    text-align: center;
+    font-family: "Inter", system-ui;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+footer .people-help{
+    margin: 8%;
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+footer .people-help h2{
+    color: #fff;
+}
+footer .people-help a{
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    color: gray;
+}
+footer .channel{
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .channel a{
+    text-decoration: none;
+}
+footer .channel i{
+    color: #fff;
+    font-size: 3.0rem;
+    margin: 20px;
+    display: flex;
+}
+footer .copy{
+    color: #fff;
+    margin-top: 5.0rem;
+}
+/*mobile-cards*/
+@media (max-width: 768px){
+    .card {
+        flex-direction: column;
+        margin: 20px 5%;
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .descricao {
+        padding: 10px;
+    }
+
+    .planos {
+        flex-direction: column;
+    }
+
+    .plano-mensal,
+    .plano-anual {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer{
+        height: 700px;
+    }
+    footer .people-help .channel{
+        display: block;
+    }
+    footer .channel i{
+        display: inline-block;
+        margin-top: 100px;
+    }
+}
+/*mobile-media*/
+@media (max-width:830px){
+    .links{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+    }
+    .btn-abrir-menu{
+        display: block;
+    }
+    .menu-mobile{
+        background-color: #000058;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9999;
+        width: 0%;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .menu-mobile.abrir-menu{
+        width: 70%;
+    }
+    .menu-mobile.abrir-menu ~ .overlay-menu{
+        display: block;
+    }
+    .menu-mobile div ul{
+        text-align: right;
+        list-style-type: none;
+        width: 100%;
+    }
+    .menu-mobile div ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 22px;
+        font-weight: 300;
+        padding: 20px 10%;
+        display: block;
+    }
+    .menu-mobile div ul li a:hover{
+        background-color: #fff;
+        color: #000000;
+    }
+    .menu-mobile .btn-fechar{
+        padding: 20px 5%;
+    }
+    .menu-mobile .btn-fechar i{
+        color: #fff;
+        font-size: 30px;
+    
+    }
+    .btn-abrir-menu i{
+        color: white;
+        font-size: 32px;
+    }
+    }
