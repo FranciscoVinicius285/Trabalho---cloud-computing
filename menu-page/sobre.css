@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*fonts
+font-family: "Poppins", system-ui;
+font-family: "Inter", system-ui;
+*/
+/*global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #000058 ;
+    font-size: 1.6rem;
+}
+/*header-menu*/
+header{
+    background: #000058;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem;
+    font-family: "Poppins", system-ui;
+}
+.logo{
+    color: white;
+    display: flex;
+    font-size: 1.9rem;
+    font-family: "Poppins", system-ui;
+}
+.logo img{
+    margin-top: 3px;
+    margin-right: 5px;
+    height: 35px;
+}
+/*links*/
+.links ul li{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8rem;
+    position: relative;
+}
+.links a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #f4c070;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+.links a:hover::after{
+    width: 100%;
+}
+/*drop-menu*/
+.dropdown{
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+.dropdown .sub-menu{
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    border-radius: 0.30rem;
+    background-color: #fff;
+}
+.dropdown .sub-menu li a{
+    color: #000000;
+}
+.dropdown .sub-menu{
+    display: none;
+}
+.links .dropdown:hover > .sub-menu{
+    display: inline-block;
+    transition: 0.3s;
+}
+.btn-abrir-menu{
+    display: none;
+}
+.menu-mobile{
+    display: none;
+}
+#main-content{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+}
+.img-cont{
+    width: 35%;
+    height: 500px;
+    color: #fff;
+    font-family: "Poppins", system-ui;
+    font-size: 4rem;
+}
+.img-cont img{
+    width: 50%;
+}
+.text-content{
+    width: 35%;
+    height: 500px;
+    font-family: "Inter", system-ui;
+    color: #fff;
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-content span{
+    font-size: 3.5rem;
+    line-height: 5rem;
+}
+.text-content p{
+    font-size: 2rem;
+}
+.container{
+    background-color:080808;
+    padding: 15px 5%;
+    padding-bottom: 30px;
+    font-family: "Inter", system-ui;
+    margin-top: 100px;
+    width: 100%;
+}
+.container .heading{
+    font-size: 3.0rem;
+    text-align: center;
+    padding-bottom:7%;
+    color: #fff;
+}
+.container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+.container .box-container .box{
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border: none;
+    border-radius: 0.30rem;
+}
+.box img{
+    width: 30%;
+    height: 100px;
+}
+.box h2{
+    font-size: 3.0rem;
+}
+.box p{
+    font-size: 1.8rem;
+    margin: 2.0rem;
+}
+.box a{
+    text-decoration: none;
+    background-color: #283ba7;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 0.30rem;
+    transition: 0.2s;
+}
+.box a:hover{
+    text-decoration: none;
+    background-color: #fff;
+    color: #000000;
+    padding: 10px 50px;
+    border: 1px solid black;
+    border-radius: 0.30rem;
+    transition: 0.2s;
+}
+footer{
+    background-color: #000058;
+    height: 500px;
+    width: 100%;
+    margin-top: 450px;
+    border-top: 1px solid #fff;
+    text-align: center;
+    font-family: "Inter", system-ui;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+footer .people-help{
+    margin: 8%;
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+footer .people-help h2{
+    color: #fff;
+}
+footer .people-help a{
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    color: gray;
+}
+footer .channel{
+    margin-top: -90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .channel a{
+    text-decoration: none;
+}
+footer .channel i{
+    color: #fff;
+    font-size: 3.0rem;
+    margin: 20px;
+    display: flex;
+}
+footer .copy{
+    color: #fff;
+    margin-top: 5.0rem;
+}
+@media (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+    #main-content{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+    }
+    .text-content{
+        width: 100%;
+    }
+    .text-content a{
+        margin-top: 1.5rem;
+    }
+    .img-cont{
+        width: 100%;
+    }
+    .img-cont img{
+        width: 50%;
+        height: 250px;
+    }
+    footer{
+        height: 700px;
+    }
+    footer .people-help .channel{
+        display: block;
+    }
+    footer .channel i{
+        display: inline-block;
+        margin-top: 100px;
+    }
+}
+/*media-querie link-menu-mobile*/
+@media (max-width:715px){
+.links{
+    display: none;
+}
+.menu-mobile{
+    display: block;
+}
+.btn-abrir-menu{
+    display: block;
+}
+.menu-mobile{
+    background-color: #000058;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+.menu-mobile div ul{
+    text-align: right;
+    list-style-type: none;
+    width: 100%;
+}
+.menu-mobile div ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 20px 10%;
+    display: block;
+}
+.menu-mobile div ul li a:hover{
+    background-color: #fff;
+    color: #000000;
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+.menu-mobile .btn-fechar i{
+    color: #fff;
+    font-size: 30px;
+
+}
+.btn-abrir-menu i{
+    color: white;
+    font-size: 32px;
+}
+}
