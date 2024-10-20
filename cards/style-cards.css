@@ -64,6 +64,33 @@ nav{
 .links a:hover::after{
     width: 100%;
 }
+.dropdown{
+    position: relative;
+    display: inline-block;
+    transition: 0.3s;
+}
+.dropdown .sub-menu{
+    position: absolute;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 100%;
+    left: 0;
+    width: 150px;
+    border-radius: 0.30rem;
+    background-color: #fff;
+}
+.dropdown .sub-menu li a{
+    color: #000000;
+}
+.dropdown .sub-menu{
+    display: none;
+}
+.links .dropdown:hover > .sub-menu{
+    display: inline-block;
+    transition: 0.3s;
+}
 .btn-abrir-menu{
     display: none;
 }
