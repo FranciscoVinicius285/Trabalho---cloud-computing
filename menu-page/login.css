@@ -44,6 +44,10 @@ body{
     justify-content: center;
     font-size: 1.5rem;
 }
+.logo a{
+    text-decoration: none;
+    color: black;
+}
 .logo img{
     width: 8rem;
 }
